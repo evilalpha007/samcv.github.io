@@ -61,12 +61,36 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
+    width: 220px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+
+section .sam_title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
     width: 180px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
 }
+
 section .title::after{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+section .sam_title::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -166,7 +190,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner1.jpg") no-repeat center;
+    background: url("images/banner_black.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -412,15 +436,15 @@ span{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
-    width: 50%;
+.skills-content .right .js::before{
+    width: 55%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .php::before{
+    width: 30%;
+}
+.skills-content .right .react::before{
     width: 70%;
 }
 
